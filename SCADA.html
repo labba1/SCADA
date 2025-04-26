@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Movie Explorer</h1>
+          <p>Find the latest, top-rated, and all your favorite movies in one place!</p>
+    </header>
+    <main>
+        <input type="text" id="search-input" placeholder="Search for Movie..." ><button class="button" id="search-button">Search</button><br>
+
+        <button class="button" id="toprated-button">Top Rated</button>
+
+        <button class="button" id="nowplaying-button">Now playing</button>
+        <section id="main-container"><div id="head"><h3>Upcoming</h3></div><br>
+        </section>
+        <section id="movies-container">
+        </section>
+
+        <template id="movie-template">
+            <div class="movie">
+                <div class="movieImage"><img class="moviePoster" src="" alt="Movie Poster"></div>
+                <div>
+                <h2 class="movieTitle"></h2>
+                <p class="movieDate"></p>
+                </div></div>
+        </template>
+        <div id="alert-main" class="hidden">
+            <div id="alert-container">
+                <p id="alert-message"></p>
+                <div id="alert-close">&times;</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Movie Explorer</p>
+        <p>&copy; 2025 Movie. All rights reserved</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="config.js"></script>
+    
+</body>
+</html>
